@@ -4,7 +4,7 @@
 * Login (controller)
 */
 ini_set('display_errors',0);
-class User_Login extends Vect_Controller {
+class User_Login extends Designandbuy_Controller {
 	public $web = array();	
 	public function __construct(){
 		parent::__construct();	

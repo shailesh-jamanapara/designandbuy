@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-class Id_Proofs_Model Extends Vect_Model
+class Id_Proofs_Model Extends Designandbuy_Model
 {
     public $model;
     public $table;

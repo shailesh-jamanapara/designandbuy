@@ -1,6 +1,6 @@
 <?php
 
-class Crm_Contacts_model Extends Vect_Model {
+class Crm_Contacts_model Extends Designandbuy_Model {
 
     public $model;
     public $table_properties;

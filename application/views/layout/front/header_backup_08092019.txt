@@ -4,7 +4,7 @@
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="theme-color" content="#f26836">
-   <title>Inquiry | Muktjivan Pixel</title>
+   <title>Inquiry | Design And Buy</title>
    <link href="<?php echo asset_url(); ?>front/images/favicon.png" rel="shortcut icon" />
    <link href="<?php echo asset_url(); ?>front/css/bootstrap.css" rel="stylesheet" type="text/css" />
    <link href="<?php echo asset_url(); ?>front/css/animate.css" rel="stylesheet" type="text/css" />
@@ -22,7 +22,7 @@
 
       <ul class="wow fadeInUp pull-left">
          <li><i class="fa fa-phone" aria-hidden="true"></i> +91 987 654 3210</li>
-         <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@muktjivanpixel.com">info@muktjivanpixel.com</a></li>
+         <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:shailesh.gajjar83@gmail.com">shailesh.gajjar83@gmail.com</a></li>
       </ul>
 	 <ul class="wow fadeInUp pull-right login_head">
          <li>

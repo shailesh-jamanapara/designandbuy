@@ -1,6 +1,6 @@
 <?php
 
-class Projects_Model Extends Vect_Model {
+class Projects_Model Extends Designandbuy_Model {
 
     public $model;
     public $table_properties;

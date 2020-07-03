@@ -4,7 +4,7 @@
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="theme-color" content="#f26836">
-   <title>Vedant School | Muktjivan Pixel</title>
+   <title>Vedant School | Design And Buy</title>
    <link href="<?php echo asset_url();?>/front/assets/images/favicon.png" rel="shortcut icon" />
    <link href="<?php echo asset_url();?>/front/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
    <link href="<?php echo asset_url();?>/front/assets/css/animate.css" rel="stylesheet" type="text/css" />
@@ -19,7 +19,7 @@
 
       <ul class="wow fadeInUp pull-left">
          <li><i class="fa fa-phone" aria-hidden="true"></i> +91 987 654 3210</li>
-         <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@muktjivanpixel.com">info@muktjivanpixel.com</a></li>
+         <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:shailesh.gajjar83@gmail.com">shailesh.gajjar83@gmail.com</a></li>
       </ul>
 
     </div>
@@ -288,14 +288,14 @@
               </div>
               <div class="footer_contact_details_block wow fadeInUp">
                  <span><i class="fa fa-envelope"></i></span>
-                 <p><a href="mailto:info@muktjivanpixel.com">info@muktjivanpixel.com</a></p>
+                 <p><a href="mailto:shailesh.gajjar83@gmail.com">shailesh.gajjar83@gmail.com</a></p>
               </div>
            </div>
          </div>
       </div>
 
       <div class="copyright_block">
-            Copyright &copy; 2019 | Muktjivan Pixel
+            Copyright &copy; 2019 | Design And Buy
       </div>
 
    </div>

@@ -40,14 +40,14 @@
               </div>
               <div class="footer_contact_details_block wow fadeInUp">
                  <span><i class="fa fa-envelope"></i></span>
-                 <p><a href="mailto:info@muktjivanpixel.com">info@muktjivanpixel.com</a></p>
+                 <p><a href="mailto:shailesh.gajjar83@gmail.com">shailesh.gajjar83@gmail.com</a></p>
               </div>
            </div>
          </div>
       </div>
 
       <div class="copyright_block">
-            Copyright &copy; 2019 | Muktjivan Pixel
+            Copyright &copy; 2019 | Design And Buy
       </div>
 
    </div>

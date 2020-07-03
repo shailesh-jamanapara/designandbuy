@@ -5,7 +5,7 @@
 */
 
 
-class Admin extends Vect_Controller {
+class Admin extends Designandbuy_Controller {
 	public $web = array();	
 	public function __construct(){
 		parent::__construct();	

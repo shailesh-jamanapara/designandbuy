@@ -71,7 +71,7 @@
           <div class="col-md-12">
             <div class="card bg-white text-center rounded-0 border-0 border-top-3-primary">
              <p class="">
-             Muktjivan pixel, head quartered in Ahmedabad, is a Hi-Fi digital marketing company who is an expertise in the field of creative Website Designing and Search Engine Optimization (SEO). We are young and energetic technical savvies and in hungry of latest innovation technologies on web. We will apply all the technology evolution strategies in our projects.  Our smart work will often describe who we are! We are providing cost effective SEO services & quality website development in different CMS technologies around the globe.We work for the client's satisfaction and will stand with you to grow your business organically. Running a business not only requires hard work but also requires effective smart work. We shall do both the works for an unbelievable cost!
+             Design And Buy, head quartered in Ahmedabad, is a Hi-Fi digital marketing company who is an expertise in the field of creative Website Designing and Search Engine Optimization (SEO). We are young and energetic technical savvies and in hungry of latest innovation technologies on web. We will apply all the technology evolution strategies in our projects.  Our smart work will often describe who we are! We are providing cost effective SEO services & quality website development in different CMS technologies around the globe.We work for the client's satisfaction and will stand with you to grow your business organically. Running a business not only requires hard work but also requires effective smart work. We shall do both the works for an unbelievable cost!
               </p>
               <p class="">
               Some of the finest websites were designed, developed and marketed by us. Click here <a href="http://www.muktjivanpixel.com" > http://www.muktjivanpixel.com </a> We originated from futuristic technology and progressing towards success with a great desire.  We work with self-derived strategies, as we have experienced everything on our own. We are equipped with the state-of-the-art work station in the website development and testing. So, results delivered on time, every time! Your success is our bread and butter!
@@ -94,7 +94,7 @@
           <div class="col-lg-8 py-5">
             <hr class="hr-lg mt-0 mb-2 w-10 ml-0 hr-primary" />
             <h2 class="text-white text-uppercase mt-0 mb-5">
-              CREATE ONLINE ID CRADS  AT <span class="text-primary font-weight-bold">MUKTJIVAN PIXEL</span>
+              CREATE ONLINE ID CRADS  AT <span class="text-primary font-weight-bold">Design And Buy</span>
             </h2>
             <div class="d-flex mb-3">
               <i class="la la-image text-white icon-1x icon-sq rounded-circle bg-primary mr-3"></i>
@@ -378,13 +378,13 @@
           </div>
           <div class="col-md-5 offset-md-1 mt-4 mt-md-0" data-animate="fadeIn" data-animate-delay="0.4">
             <h4 class="mb-1 font-weight-bold">
-              Muktjivan Pixel.
+              Design And Buy.
             </h4>
             <p class="mb-1">
               <abbr title="Address"><i class="fa fa-home pr-2"></i></abbr> 1st Floor, Opp. Kalupur Bank,New Anaj Bazaar,  Khokhra, Ahmedabad.
             </p>
             <p class="mb-1">
-              <abbr title="Email"><i class="fa fa-envelope pr-2"></i></abbr>info@muktjivanpixel.com
+              <abbr title="Email"><i class="fa fa-envelope pr-2"></i></abbr>shailesh.gajjar83@gmail.com
             </p>
             <p class="mb-0">
               <abbr title="Phone"><i class="fa fa-phone pr-2"></i></abbr>+91 968 761 2995

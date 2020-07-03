@@ -1,6 +1,6 @@
 <?php
 
-class Studio Extends Vect_Controller {
+class Studio Extends Designandbuy_Controller {
     public $web = array();
     private $model_name;
     private $_model;

@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-class student_Card_Action_Queries_Model Extends Vect_Model {
+class student_Card_Action_Queries_Model Extends Designandbuy_Model {
 
     public $model;
     public $table_properties;

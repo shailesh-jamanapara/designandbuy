@@ -2,7 +2,7 @@
 
 ini_set('display_errors', 1);
 
-class Ajax Extends Vect_Controller {
+class Ajax Extends Designandbuy_Controller {
 
     public $web = array();
     private $model_name;

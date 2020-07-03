@@ -2,7 +2,7 @@
 
 ini_set('display_errors', 1);
 
-class Crm_Contacts Extends Vect_Controller {
+class Crm_Contacts Extends Designandbuy_Controller {
 
     public $web = array();
     private $model_name;

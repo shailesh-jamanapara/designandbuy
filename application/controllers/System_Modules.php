@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 ini_set('display_erros',0);
-class System_Modules Extends Vect_Controller {
+class System_Modules Extends Designandbuy_Controller {
 
     public $web = array();
     private $model_name;

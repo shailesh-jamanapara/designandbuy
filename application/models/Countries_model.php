@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-class Countries_Model Extends Vect_Model {
+class Countries_Model Extends Designandbuy_Model {
 
     public $model;
     public $table_properties;

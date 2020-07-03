@@ -2,7 +2,7 @@
 
 ini_set('display_errors', 1);
 
-class Countries Extends Vect_Controller {
+class Countries Extends Designandbuy_Controller {
 
     public $web = array();
     private $model_name;

@@ -2,7 +2,7 @@
 
 /*
   Class Templates_Model
-  Extends Vect_Model
+  Extends Designandbuy_Model
   Copyright © 2019 bimsym.com. All rights reserved.
   Author BimSym HRM Development Team
   Version 1.0
@@ -10,7 +10,7 @@
   Description : This is a Templates_Model model.
  */
 
-class Templates_Model Extends Vect_Model {
+class Templates_Model Extends Designandbuy_Model {
 
     public $model;
     public $table_properties;

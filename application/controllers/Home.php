@@ -1,5 +1,5 @@
 <?php
-class Home Extends Vect_Controller {
+class Home Extends Designandbuy_Controller {
     public $web = array();
     private $model_name;
     private $_model;

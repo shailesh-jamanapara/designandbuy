@@ -4,7 +4,7 @@
       <div class="row">
         <!--@todo: replace with company copyright details-->
         <div class="col-md-6">
-          <p class="mb-0 text-sm">Copyright 2019 &copy; Muktjivan Pixel</p>
+          <p class="mb-0 text-sm">Copyright 2019 &copy; Design And Buy</p>
           <ul class="list-inline footer-links mb-0 text-sm">
             <li class="list-inline-item"><a href="#">Terms</a></li>
             <li class="list-inline-item"><a href="#">Privacy</a></li>

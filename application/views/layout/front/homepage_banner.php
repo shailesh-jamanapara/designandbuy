@@ -14,7 +14,7 @@
               <!-- Layer 1 -->
               <div class="tp-caption text-grey" data-x="['left','left','left','left']" data-hoffset="['0','0','0','40']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['120','120','120','120']" data-fontsize="['42','42','42','42']" data-lineheight="['52','52','52','52']"
                 data-width="472" data-height="none" data-whitespace="normal" data-type="text" data-basealign="slide" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1200,"to":"o:1;","delay":1300,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
-                data-textAlign="left"> <span class="font-weight-bold text-uppercase text-white">Welcome to Muktjivan Pixel</span>
+                data-textAlign="left"> <span class="font-weight-bold text-uppercase text-white">Welcome to Design And Buy</span>
               </div>
               <!-- Layer 3 -->
               <div class="tp-caption text-grey" data-x="['left','left','left','left']" data-hoffset="['0','0','0','40']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['60','60','60','60']" data-fontsize="['20','20','20','30']" data-width="none" data-height="none"
@@ -120,7 +120,7 @@
             <!-- Layer 2 -->
             <div class="tp-caption text-grey" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['22','22','22','0']" data-fontsize="['20','20','20','20']" data-lineheight="['20','20','20','20']"
               data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-basealign="slide" data-responsive_offset="off" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1300,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-              data-textAlign="['left','left','left','left']">Let's start your next ID cards project with Muktjivan Pixel's designer studio!</div>
+              data-textAlign="['left','left','left','left']">Let's start your next ID cards project with Design And Buy's designer studio!</div>
             <!-- Layer 3 -->
             <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['122','122','60','30']" data-width="none" data-height="none" data-whitespace="nowrap"
               data-basealign="slide" data-responsive_offset="off" data-responsive="on" data-frames='[{"from":"y:100px;rX:90deg;opacity:0;","speed":1500,"to":"o:1;","delay":700,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'>

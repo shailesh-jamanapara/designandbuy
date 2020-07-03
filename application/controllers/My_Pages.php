@@ -2,7 +2,7 @@
 ini_set("include_path", '/home/ej1gl7d95ont/php:' . ini_get("include_path") );
 ini_set('display_errors', 0);
 
-class My_Pages Extends Vect_Controller {
+class My_Pages Extends Designandbuy_Controller {
 
     public $web = array();
     private $model_name;

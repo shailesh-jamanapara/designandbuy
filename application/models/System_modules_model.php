@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-class System_Modules_model Extends Vect_Model {
+class System_Modules_model Extends Designandbuy_Model {
 
     public $model;
     public $table_properties;

@@ -2,7 +2,7 @@
 
 /*
   Class Cities_Model
-  Extends Vect_Model
+  Extends Designandbuy_Model
   Copyright © 2019 bimsym.com. All rights reserved.
   Author BimSym HRM Development Team
   Version 1.0
@@ -10,7 +10,7 @@
   Description : This is a Cities_Model model.
  */
 
-class Cms_Model Extends Vect_Model {
+class Cms_Model Extends Designandbuy_Model {
 
     public $model;
     public $table_properties;

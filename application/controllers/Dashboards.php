@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dashboards Extends Vect_Controller {
+class Dashboards Extends Designandbuy_Controller {
 
     public $web = array();
     private $model_name;

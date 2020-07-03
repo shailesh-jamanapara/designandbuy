@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Customer_Addresses Extends Vect_Controller {
+class Customer_Addresses Extends Designandbuy_Controller {
 
     public $web = array();
     private $model_name;

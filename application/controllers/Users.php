@@ -2,7 +2,7 @@
 
 ini_set('display_errors', 1);
 
-class Users Extends Vect_Controller {
+class Users Extends Designandbuy_Controller {
 
     public $web = array();
     private $model_name;

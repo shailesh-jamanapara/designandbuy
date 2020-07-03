@@ -1,6 +1,6 @@
 <?php
 
-class Product_Categories Extends Vect_Controller {
+class Product_Categories Extends Designandbuy_Controller {
 
     public $web = array();
     private $model_name;

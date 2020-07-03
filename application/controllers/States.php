@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class States Extends Vect_Controller {
+class States Extends Designandbuy_Controller {
 
     public $web = array();
     private $model_name;

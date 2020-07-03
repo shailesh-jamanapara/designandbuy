@@ -41,8 +41,8 @@
                             	<div class="contact_block_item wow fadeInUp">
                                 	<h2>Email</h2>
                                     <p>
-                                    	<a href="mailto:info@muktjivanpixel.com">info@muktjivanpixel.com</a>
-                                    	<a href="mailto:info@muktjivanpixel.com">info@muktjivanpixel.com</a>
+                                    	<a href="mailto:shailesh.gajjar83@gmail.com">shailesh.gajjar83@gmail.com</a>
+                                    	<a href="mailto:shailesh.gajjar83@gmail.com">shailesh.gajjar83@gmail.com</a>
                                     </p>
                                 </div>
                             </div>

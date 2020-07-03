@@ -1,6 +1,6 @@
 <?php
 
-class Cms Extends Vect_Controller {
+class Cms Extends Designandbuy_Controller {
 
 	public $web = array();
 	private $model_name;
