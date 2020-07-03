@@ -71,19 +71,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | the query builder class.
 */
 
-// for live server 
-//$db_host = 'ls-fc4f32a77cae5074eb520721e6feb53822c2802b.clalvibll3fe.ap-south-1.rds.amazonaws.com';
-//$db_user = 'dbmasteruser';
-//$db_pwd = 'user#1234';
-//$db_name = 'wbs';
-
-
 // for developing server 
 
 $db_host 	= 'localhost';
 $db_user 	= 'root';
 $db_pwd 	= '';
-$db_name 	= 'muktjivan';
+$db_name 	= 'designandbuy';
 
  $active_group = 'default';
 $query_builder = TRUE;  

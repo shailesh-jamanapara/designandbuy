@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-Class Vect_Controller Extends CI_Controller
+Class Designandbuy_Controller Extends CI_Controller
 {
 	/*
 	Protected $instance_id will be used to check if application being used under valid instance or not;
@@ -622,47 +622,25 @@ Class Vect_Controller Extends CI_Controller
 		
 	}
 	public function sendEmail($to, $from, $subject, $body ){
-		        //Sending email using CI Email library
-				/*
-				$config = array(
-					'protocol' => 'smtp', // 'mail', 'sendmail', or 'smtp'
-					'smtp_host' => 'ssl://smtp.gmail.com', 
-					'smtp_port' => 465,
-					'smtp_user' => 'shailesh.gajjar83@gmail.com',
-					'smtp_pass' => 'Constentinople#13',
-					//'smtp_crypto' => 'ssl', //can be 'ssl' or 'tls' for example
-					'mailtype' => 'html', //plaintext 'text' mails or 'html'
-					'smtp_timeout' => '4', //in seconds
-					'newline' => '\r\n',
-					'charset' => 'iso-8859-1',
-					'wordwrap' => TRUE
-				);
-				$this->load->library('email', $config);
-                $this->email->from($from);
-                $this->email->to($to);
-                $this->email->subject($subject);
-				$this->email->message($body);
-				$result = $this->email->send();
-				*/
-				$this->load->library('email');
-				$config['protocol']    = 'smtp';
-				$config['smtp_host']    = 'ssl://smtp.gmail.com';
-				$config['smtp_port']    = '465';
-				$config['smtp_timeout'] = '7';
-				$config['smtp_user']    = 'shailesh.gajjar83@gmail.com';
-				$config['smtp_pass']    = 'Constentinople#13';
-				$config['charset']    = 'utf-8';
-				$config['newline']    = "\r\n";
-				$config['mailtype'] = 'html'; // or html
-				$config['validation'] = TRUE; // bool whether to validate email or not      
-				$this->email->initialize($config);
+		//Sending email using CI Email library
+		$this->load->library('email');
+		$config['protocol']    = 'smtp';
+		$config['smtp_host']    = 'ssl://smtp.gmail.com';
+		$config['smtp_port']    = '465';
+		$config['smtp_timeout'] = '7';
+		$config['smtp_user']    = 'youremailid';
+		$config['smtp_pass']    = 'yourpassword';
+		$config['charset']    = 'utf-8';
+		$config['newline']    = "\r\n";
+		$config['mailtype'] = 'html'; // or html
+		$config['validation'] = TRUE; // bool whether to validate email or not      
+		$this->email->initialize($config);
 
-				$this->email->from(' Muktjivan pixel');
-                $this->email->to($to);
-                $this->email->subject($subject);
-				$this->email->message($body);  
-				if($this->email->send()) return true; else return false;
-			
+		$this->email->from(' Design And Buy');
+		$this->email->to($to);
+		$this->email->subject($subject);
+		$this->email->message($body);  
+		if($this->email->send()) return true; else return false;
 	}
 	
 	public function getAdminEmailID(){
@@ -700,16 +678,16 @@ Class Vect_Controller Extends CI_Controller
 	public function sendSignUpEmail( $customer_name, $contact_name, $email, $username, $password, $token)
 	{
 		//$from = $this->getAdminEmailID();
-		$from = 'info@muktjivanpixel.com';
+		$from = 'shailesh.gajjar83@gmail.com';
 		$login = base_url().'user-login';
 		if($from){
 			$link = $login."?token=".$token;
-			$subject = 'Muktjivan Pixel : New Account Created :: '. $customer_name;
+			$subject = 'Design And Buy : New Account Created :: '. $customer_name;
 			$body = '';
 			$body .= '<p> Dear '.$contact_name.', </p>';
 			$body .= '<p>  </p>';
-			$body .= '<p> Welcome to Muktjivan Pixel </p>';
-			$body .= '<p> Please click <a href="'.$link.'"> here </a> or copy and paste below link to login Muktjivan Pixel. </p>';
+			$body .= '<p> Welcome to Design And Buy </p>';
+			$body .= '<p> Please click <a href="'.$link.'"> here </a> or copy and paste below link to login Design And Buy. </p>';
 			$body .= '<p> URL : '.$link.' </p>';
 			$body .= '<p>  </p>';
 			$body .= '<p> Login username  : '.$username.' </p>';
@@ -721,7 +699,7 @@ Class Vect_Controller Extends CI_Controller
 			$body .= '<p>  </p>';
 			$body .= '<p>  </p>';
 			$body .= '<p> Thank you, </p>';
-			$body .= '<p> Muktjivan Pixel. </p>';
+			$body .= '<p> Design And Buy. </p>';
 			if($this->sendEmail(trim($email), $from, $subject, $body)){
 				//echo "success"; exit;
 				$return['status']= 'success';
@@ -745,7 +723,7 @@ Class Vect_Controller Extends CI_Controller
 		//$from = $this->getAdminEmailID();
 		$from = 'noreply@muktjivanpixel.com';
 		if($from){
-			//$subject = 'Muktjivan Pixel : : New Inquiry Received :: '. $school_name;
+			//$subject = 'Design And Buy : : New Inquiry Received :: '. $school_name;
 			$subject = 'Thank you for writing us.';
 			$body = '';
 			$body .= '<p> Hello  '.$crm_contact_name.', </p>';
@@ -754,7 +732,7 @@ Class Vect_Controller Extends CI_Controller
 			$body .= '<p> Our representetive will contact you very soon.</p>';
 			$body .= '<p>  </p>';
 			$body .= '<p> Regards. </p>';
-			$body .= '<p> Muktjivan Pixel. </p>';
+			$body .= '<p> Design And Buy. </p>';
 			$body .= '<p>  </p>';
 			$body .= '<p> Email : inquiry@muktjivanpixel.com</p>';
 			$body .= '<p> Ahmedabad IN 38008</p>';
@@ -890,23 +868,23 @@ Class Vect_Controller Extends CI_Controller
 		public function sendForgotPasswordEmail( $customer_name, $email, $username, $token)
 		{
 			//$from = $this->getAdminEmailID();
-			$from = 'info@muktjivanpixel.com';
+			$from = 'shailesh.gajjar83@gmail.com';
 			$reset_password = base_url().'reset-password';
 			if($from){
 				$link = $reset_password."?token=".$token;
-				$subject = 'Forgot Password at Muktjivan Pixel';
+				$subject = 'Forgot Password at Design And Buy';
 				$body = '';
 				$body .= '<p> Dear '.$customer_name.', </p>';
 				$body .= '<p>  </p>';
-				$body .= '<p> We have received a request of password recovery from  username '.$username.' and email ID '.$email.' at Muktjivan Pixel </p>';
-				$body .= '<p> Please click <a href="'.$link.'"> '.$link.' </a> or copy and paste below link to reset password of your account at Muktjivan Pixel. </p>';
+				$body .= '<p> We have received a request of password recovery from  username '.$username.' and email ID '.$email.' at Design And Buy </p>';
+				$body .= '<p> Please click <a href="'.$link.'"> '.$link.' </a> or copy and paste below link to reset password of your account at Design And Buy. </p>';
 				$body .= '<p>  </p>';
 				$body .= '<p> You can contact us at '.$from.' for more assistance. </p>';
 				$body .= '<p>  </p>';
 				$body .= '<p>  </p>';
 				$body .= '<p>  </p>';
 				$body .= '<p> Thank you, </p>';
-				$body .= '<p> Muktjivan Pixel. </p>';
+				$body .= '<p> Design And Buy. </p>';
 				if($this->sendEmail(trim($email), $from, $subject, $body)){
 					return true;
 				}else{
