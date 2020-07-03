@@ -1,0 +1,30 @@
+.glyphicon-ring {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 4px solid white;
+  color: white;
+  display: inline-table;
+  text-align: center;
+}
+/**CSS FOR ICON WITH NO BACKGROUND COLOR**/
+
+.glyphicon-ring .glyphicon-bordered {
+  font-size: 20px;
+  vertical-align: middle;
+  display: table-cell;
+}
+/**WITH AN ADDED BACKGROUND COLOR**/
+
+.glyphicon-white {
+  background: white;
+  color: black;
+  border: 4px solid black;
+}
+.glyphicon-teal {
+  background: teal;
+  color: orange;
+}
+.glyphicon-red {
+  background: red;
+}

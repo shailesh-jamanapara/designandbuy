@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         {% block head %}
+            <title>{% block title %}{% endblock %} - BimSym HRM</title>
+			{% include 'header.twig' %}
+        {% endblock %}
+    </head>
+    <body class="nav-md">
+    <div class="container body">
+		<div class="main_container">
+			{% include 'topnav_bar.twig' %}
+			{% block content %}
+				
+				
+			{% endblock %}
+		</div>
+        <div id="footer">
+            {% block footer %}
+				{% include 'footer.twig' %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

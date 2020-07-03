@@ -1,0 +1,24 @@
+<div class="col-sm-3 col-lg-3 shadow-lg pt-2 pr-3 pb-3  mb-5 bg-white text-left" style="min-height:336px;" id="div_btn">
+
+<a href="<?php echo base_url();?>My_Pages/idcards" class="mb-2 btn  btn-white btn-shadow  btn-rounded text-default pt-2  pr-2  pb-2  pl-2 text-left  <?php if($request['ACTION'] == 'idcards' && !isset($request['SUB_ACTION'])) { echo 'active'; } ?>" role="button"  id="btn_download_link"><i class="fa fa-tachometer pull-left <?php if($request['ACTION'] == 'idcards'  && !isset($request['SUB_ACTION'])) { echo 'text-white'; }else{ echo 'text-primary'; } ?>" ></i>&nbsp;All I-Cards</a>
+
+    <a href="<?php echo base_url();?>My_Pages/idcards/completed" class="mb-2 btn  btn-white btn-shadow  btn-rounded text-default pt-2  pr-2  pb-2  pl-2 text-left  <?php if($request['SUB_ACTION'] == 'completed') { echo 'active'; } ?>" role="button"  id="btn_download_link"><i class="fa fa-briefcase pull-left <?php if($request['SUB_ACTION'] == 'completed') { echo 'text-white'; }else{ echo 'text-primary'; } ?>" ></i>&nbsp;Completed I-Cards</a>
+
+    <a  href="<?php echo base_url();?>My_Pages/idcards/under_printing" class="mb-2 btn  btn-white btn-shadow  btn-rounded text-default pt-2  pr-2  pb-2  pl-2 text-left   <?php if($request['SUB_ACTION'] == 'under_printing') { echo 'active'; } ?>" role="button" id="btn_upload_link" ><i class="fa fa-print pull-left  <?php if($request['ACTION'] == 'under_printing') { echo 'text-white'; }else{ echo 'text-primary'; } ?>" ></i>&nbsp;Under printing I-Cards</a>
+
+    <a  href="<?php echo base_url();?>My_Pages/idcards/reviewed" class="mb-2 btn  btn-white btn-shadow  btn-rounded text-default pt-2  pr-1  pb-2  pl-2 text-left   <?php if($request['SUB_ACTION'] == 'reviewed') { echo 'active'; } ?>" role="button" id="btn_upload_photo" ><i class="fa fa-eye pull-left  <?php if($request['SUB_ACTION'] == 'reviewed') { echo 'text-white'; }else{ echo 'text-primary'; } ?>" ></i>&nbsp;Reviewed I-Cards</a>
+
+    <a  href="<?php echo base_url();?>My_Pages/idcards/pending_review" class="mb-2 btn  btn-white btn-shadow  btn-rounded text-default pt-2  pr-1  pb-2  pl-2 text-left   <?php if($request['SUB_ACTION'] == 'pending_review') { echo 'active'; } ?>" role="button" id="btn_upload_photo" ><i class="fa fa-eye pull-left <?php if($request['SUB_ACTION'] == 'SUB_ACTION') { echo 'text-white'; }else{ echo 'text-primary'; } ?>" ></i>&nbsp;Pending review I-Cards</a> 
+
+</div>
+<div class="col-sm-3 col-lg-1 shadow-lg pt-2 pr-3 pb-3  mb-5 bg-white text-left" style="min-height:336px;" id="div_btn_collapsed" >
+    <a href="<?php echo base_url();?>My_Pages/idcards" class="mb-2 btn  btn-white btn-shadow  btn-rounded text-default pt-2  pr-2  pb-2  pl-2 text-left  <?php if($request['ACTION'] == 'idcards'  && !isset($request['SUB_ACTION'])) { echo 'active'; } ?>" role="button"  id="btn_download_link" title="Completed ID cards data" ><i class="fa fa-tachometer pull-left <?php if($request['ACTION'] == 'idcards'  && !isset($request['SUB_ACTION']) ) { echo 'text-white'; }else{ echo 'text-primary'; } ?>" ></i></a>
+    
+    <a href="<?php echo base_url();?>My_Pages/idcards/completed" class="mb-2 btn  btn-white btn-shadow  btn-rounded text-default pt-2  pr-2  pb-2  pl-2 text-left  <?php if($request['SUB_ACTION'] == 'completed') { echo 'active'; } ?>" role="button"  id="btn_download_link" title="Completed ID cards data" ><i class="fa fa-briefcase pull-left  <?php if($request['SUB_ACTION'] == 'completed') { echo 'text-white'; }else{ echo 'text-primary'; } ?>" ></i></a>
+
+    <a  href="<?php echo base_url();?>My_Pages/idcards/under_printing" class="mb-2 btn  btn-white btn-shadow  btn-rounded text-default pt-2  pr-2  pb-2  pl-2 text-left   <?php if($request['SUB_ACTION'] == 'under_printing') { echo 'active'; } ?>" role="button" id="btn_upload_link" title="In process ID cards data"><i class="fa fa-cogs pull-left    <?php if($request['SUB_ACTION'] == 'under_printing') { echo 'text-white'; }else{ echo 'text-primary'; } ?>" ></i></a>
+
+    <a  href="<?php echo base_url();?>My_Pages/idcards/reviewed" class="mb-2 btn  btn-white btn-shadow  btn-rounded text-default pt-2  pr-2  pb-2  pl-2 text-left   <?php if($request['SUB_ACTION'] == 'reviewed') { echo 'active'; } ?> " role="button" id="btn_upload_photo" title="Drafted ID cards data" ><i class="fa fa-inbox pull-left   <?php if($request['SUB_ACTION'] == 'reviewed') { echo 'text-white'; }else{ echo 'text-primary'; } ?>" ></i></a>
+
+    <a  href="<?php echo base_url();?>My_Pages/idcards/pending_review" class="mb-2 btn  btn-white btn-shadow  btn-rounded text-default pt-2  pr-2  pb-2  pl-2 text-left  <?php if( $request['SUB_ACTION'] == 'pending_review') { echo 'active'; } ?>" role="button" id="btn_data_entry_link" title="Pending information data" ><i class="fa fa-history pull-left   <?php if($request['SUB_ACTION'] == 'pending_review') { echo 'text-white'; }else{ echo 'text-primary'; } ?>" ></i></a>
+</div>

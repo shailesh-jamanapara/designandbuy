@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	 {% block head %}
+            <title>{% block title %}{% endblock %} - My Webpage</title>
+			
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>BimHR | Employment Record</title>
+
+        <!-- Bootstrap -->
+        <link href="{{ web.vendor_url }}bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="{{ web.vendor_url }}font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!-- NProgress -->
+        <link href="{{ web.vendor_url }}nprogress/nprogress.css" rel="stylesheet">
+
+        <!-- iCheck -->
+        <link href="{{ web.vendor_url }}iCheck/skins/flat/green.css" rel="stylesheet">
+        <!-- Datatables -->
+        <link href="{{ web.vendor_url }}datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+        <link href="{{ web.vendor_url }}datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+        <link href="{{ web.vendor_url }}datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+        <link href="{{ web.vendor_url }}datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+        <link href="{{ web.vendor_url }}datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styling plus plugins -->
+        <link href="{{ web.asset_url }}build/css/custom.css" rel="stylesheet">
+        <!-- Boostrap toggle button -->
+        <link href="{{ web.asset_url }}build/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <!-- bootstrap-datepicker --> 
+        <link rel="stylesheet" href="{{ web.asset_url }}build/css/bootstrap-datepicker3.css"/>
+
+        <!-- jQuery -->
+        <script src="{{ web.vendor_url }}jquery/dist/jquery.min.js"></script>
+
+
+        <!-- bootstrap-datepicker -->
+        <script src="{{ web.vendor_url }}moment/min/moment.min.js"></script>
+        <script type="text/javascript" src="{{ web.asset_url }}build/js/bootstrap-datepicker.min.js"></script>
+
+        <!--- Validation -->
+        <script src="{{ web.asset_url }}build/js/jquery.validate.js"></script>
+
+        <!----- Boostrap Timepicker ------>
+        <link rel="stylesheet" href="{{ web.asset_url }}build/css/bootstrap-timepicker.css" />
+		 <link href="{{ web.asset_url }}build/js/tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+        <script src="{{ web.asset_url }}build/js/bootstrap-timepicker.min.js"></script>
+        {% endblock %}	
+  </head>
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+				<a href="{{ web.base_url }}index.php/dashboards" class="site_title">
+					<span id="spanin"><span style="color:red;">b</span>hr</span>
+					<!--<img src="{{ web.asset_url }}images/logo.png" class="" alt="BimSym Logo" style="height:30px;margin-top: 10px;">-->
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<!-- menu profile quick info -->
+			<div class="profile clearfix">
+				<div class="profile_pic">
+					<img  src="{{ web.base_url }}<?php echo get_profile_pic(); ?>" alt="<?php echo login_username(); ?>" class="img-circle profile_img">
+				</div>
+				<div class="profile_info">
+					<span>Welcome,</span>
+					<h2><?php echo  login_username(); ?></h2>
+				</div>
+			</div>
+			<!-- /menu profile quick info -->
+			<br/>
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+					<ul class="nav side-menu">
+						<li><a href="{{ web.base_url }}index.php/dashboards"><i class="fa fa-desktop"></i> Dashboard </a>
+					<?php  echo print_menu($request['roles_accesses']); ?>
+					</ul>
+              </div>
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+			<nav>
+				<div class="nav toggle">
+					<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+				</div>
+				<div class="nav Branch_Title" style="">
+					<h2>BimSym Tech Support</h2>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					
+					<li class="">
+						<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+							<img   src="{{ web.base_url }}<?php echo get_profile_pic(); ?>" alt="<?php echo login_username(); ?>"> Welcome, 
+							<?php
+								echo login_username();
+							?>
+							<span class=" fa fa-angle-down"></span>
+						</a>
+						<ul class="dropdown-menu dropdown-usermenu pull-right">
+							<li><a href="javascript:void(0);" onclick="javascript:viewprofile( '<?php echo  get_user_id();?>', '{{ web.base_url }}index.php/users/my_profile');"><i class="fa fa-user pull-right"></i> Profile</a></li>
+
+							<li><a href="{{ web.base_url }}index.php/Login/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+						</ul>
+					</li>
+					<?php if(  in_array(base64_decode(get_user_role()), array('1','2','3','4'))){ 
+						$cnt = 0;
+						$leaves = get_leave_applications();
+						//$projects = get_projects(); 
+						//$feedbacks = get_feedbacks(); 
+						//$complains = get_complains(); 
+						if($leaves > 0)$cnt++;
+						//if($feedbacks > 0)$cnt++;
+						//if($complains > 0)$cnt++;
+						?>
+						
+						<li class="" id="leave_list" >
+							<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								<span class=" fa fa-bell"></span><span class="badge bg-info  pull-right">2</span>
+							</a>
+							<ul class="dropdown-menu dropdown-usermenu pull-right" id="noti_list">
+								<?php if(get_leave_applications() > 0) { ?>
+									<li class="leave_note"> <a href="{{ web.base_url }}index.php/Leave_Applications" > <span class="badge bg-green"><?=$leaves; ?></span> New Leave Applications  <i class="pull-right fa fa-arrow-right" title="View All Leave Applications"></i> </a></li>
+								<?php } ?>
+								<?php if(get_leave_applications() > 0) { ?>
+									<li class="leave_note"> <a href="{{ web.base_url }}index.php/Leave_Applications" > <span class="badge bg-green"><?=$leaves; ?></span> New Projects  <i class="pull-right fa fa-arrow-right" title="View All Leave Applications"></i> </a></li>
+								<?php } ?>
+								<?php if(get_leave_applications() > 0) { ?>
+									<li class="leave_note"> <a href="{{ web.base_url }}index.php/Leave_Applications" > <span class="badge bg-green"><?=$leaves; ?></span> New Requisitions  <i class="pull-right fa fa-arrow-right" title="View All Leave Applications"></i> </a></li>
+								<?php } ?>
+								<?php if(get_leave_applications() > 0) { ?>
+								<li class="leave_note"> <a href="{{ web.base_url }}index.php/Leave_Applications" > <span class="badge bg-green"><?=$leaves; ?></span> New Complains  <i class="pull-right fa fa-arrow-right" title="View All Leave Applications"></i> </a></li>
+								<?php } ?>
+								<li class="leave_note"> <a href="{{ web.base_url }}index.php/Leave_Applications" > View All Notifications  <i class="pull-right fa fa-arrow-right" title=" View All Notifications"></i> </a></li>
+								
+							</ul>
+						</li>
+						
+					<?php } ?>
+				</ul>
+			</nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+		<!-- page content -->

@@ -1,0 +1,1 @@
+$('#auto-collapse-menu-demo').metisMenu();

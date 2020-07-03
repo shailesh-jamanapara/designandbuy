@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	 {% block head %}
+            <title>{% block title %}{% endblock %} - My Webpage</title>
+			
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>BimHR | Employment Record</title>
+
+        <!-- Bootstrap -->
+        <link href="{{ app.vendor_url }}bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="{{ app.vendor_url }}font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!-- NProgress -->
+        <link href="{{ app.vendor_url }}nprogress/nprogress.css" rel="stylesheet">
+
+        <!-- iCheck -->
+        <link href="{{ app.vendor_url }}iCheck/skins/flat/green.css" rel="stylesheet">
+        <!-- Datatables -->
+        <link href="{{ app.vendor_url }}datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+        <link href="{{ app.vendor_url }}datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+        <link href="{{ app.vendor_url }}datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+        <link href="{{ app.vendor_url }}datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+        <link href="{{ app.vendor_url }}datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styling plus plugins -->
+        <link href="{{ app.asset_url }}build/css/custom.css" rel="stylesheet">
+        <!-- Boostrap toggle button -->
+        <link href="{{ app.asset_url }}build/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <!-- bootstrap-datepicker --> 
+        <link rel="stylesheet" href="{{ app.asset_url }}build/css/bootstrap-datepicker3.css"/>
+
+        <!-- jQuery -->
+        <script src="{{ app.vendor_url }}jquery/dist/jquery.min.js"></script>
+
+
+        <!-- bootstrap-datepicker -->
+        <script src="{{ app.vendor_url }}moment/min/moment.min.js"></script>
+        <script type="text/javascript" src="{{ app.asset_url }}build/js/bootstrap-datepicker.min.js"></script>
+
+        <!--- Validation -->
+        <script src="{{ app.asset_url }}build/js/jquery.validate.js"></script>
+
+        <!----- Boostrap Timepicker ------>
+        <link rel="stylesheet" href="{{ app.asset_url }}build/css/bootstrap-timepicker.css" />
+		 <link href="{{ app.asset_url }}build/js/tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+        <script src="{{ app.asset_url }}build/js/bootstrap-timepicker.min.js"></script>
+        {% endblock %}	
+  </head>
+  

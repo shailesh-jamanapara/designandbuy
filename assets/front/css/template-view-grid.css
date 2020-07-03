@@ -1,0 +1,94 @@
+/*1-6-2019*/
+.card_design_wrap {float:left;}
+.hori_card_part {float:left; width:100%; background:#fff;}
+	.hori_header_block {
+     float: left;
+    width: 305px;
+    background: #E31E25;
+    padding: 5px 10px 15px 7px;
+    position: relative;
+	
+}
+.hori_header_block:before {
+    content: '';
+    width: 100%;
+    height: 15px;
+    background: url(../../front/assets/images/curve_border.png) 0 0 repeat-x;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: 24px;
+}
+.hori_logo_part {float:left; width:90px;}
+.hori_header_title {float:left; width:76%; padding:0 0 0 10px;}
+.hori_card_part .form-control {border:none; padding:0; line-height:normal; border-radius:0; background:none; box-shadow:none; width:auto; height:auto;}
+.hori_header_title .form-control {text-align:center; width:100%;}
+.hori_header_title .title1 .form-control {text-transform:uppercase; font-size:22px; color:#fff;margin-bottom: 2px !important;}
+.hori_header_title .title2 .form-control {text-transform:uppercase; font-size:26px; color:#FFEB02;margin-bottom: 2px !important;}
+
+.hori_body_part {float:left; width:100%; padding:5px 20px 0 20px;}
+.hori_card_info_block {float:left; width:70%;}
+.hori_card_info_block .form-group span {font-size:18px; font-weight:bold; color:#000; display:inline-block;}
+.hori_card_info_block .title_name .form-control {font-size:18px; font-weight:bold; color:#000; display:inline-block; width:80%;}
+.hori_card_info_block .form-group .form-control {font-size:18px; color:#000; display:inline-block;}
+.hori_card_info_block .title_class .form-control {width:108px;}
+.hori_card_info_block .title_dob .form-control {width:105px;}
+.hori_body_part .form-group {margin-bottom:8px;}
+.hori_card_info_block .title_address .form-control {float:left; width:100%; height:70px; line-height:13px;}
+.hori_card_part textarea {resize: none;}
+.hori_bottom_part {float:left; width:100%; padding:5px 100px; background:#E31E25;}
+.hori_card_part .hori_bottom_part textarea {width:100%; color:#fff; font-size:12px; text-align:center; line-height:16px;}
+.hori_card_info_block .title_address span img {width: 20px; float: left; margin-right: 5px;}
+.hori_photo_block {float:left; width:30%; padding:0 0 0 15px;}
+.card_profile_pic {float:left; width:100%; position:relative;}
+.hori_year_block {float:left; width:100%;}
+.hori_year_block .form-control {text-align:center; color:#000; font-weight:bold; width:100%; margin:5px 0; font-size:18px;}
+.hori_card_info_block .title_phone .form-control {width:75%;}
+.card_profile_pic .p-image .file-upload {display:none;}
+
+.hori_body_part .profile-pic {
+    display: inline-block;
+}
+.hori_body_part  .file-upload {
+    display: none;
+}
+.hori_body_part  .circle {
+    overflow: hidden;
+    width: 100%;
+    height: 175px;
+    border: 1px solid #ccc;
+}
+.hori_body_part  .p-image {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  color: #666666;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.hori_body_part  .p-image i {color:red; cursor:pointer;}
+.hori_body_part  .p-image:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.hori_body_part  .upload-button:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  color: #999;
+}
+/*07 06 2019 */
+.div_view_cards_a4{
+	width:203.2mm !important;
+}
+/**/
+/*1-6-2019*/
+
+@page {
+   size: 8in 12in;
+   margin: 27mm 16mm 27mm 16mm;
+}
+@media print{
+    body{
+        width: 8in;
+        height: 12in;
+        margin: 27mm 16mm 27mm 16mm;
+        /* change the margins as you want them to be. */
+   } 
+}

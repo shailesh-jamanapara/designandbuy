@@ -1,0 +1,324 @@
+API Key
+
+https://developers.convertio.co/
+
+71b03e0549d00b60778d735fcc02d96f
+
+
+-------------------------------Start 21 April 2020------------------------------------------
+
+Uploaded files on vectsolutions.com/muktjivanpixels
+Created new Database muktjivanpixels
+Created new DB user muktjivanadmin
+Added user muktjivanadmin to muktjivanpixels DB
+Taken backup of loacldb and uploaded to the dev server 
+File Location : D:\devlopment\muktjivanpixels\DatabaseChangeLog
+File Name : muktjivan_dev.zip
+
+-------------------------------End 21 April 2020------------------------------------------
+
+-------------------------------Start 02 May 2020------------------------------------------
+
+application/controllers/My_Pages.php --MODIFIED
+
+application/models/Students_model.php --MODIFIED
+application/models/Temp_students_model.php  --MODIFIED
+application/views/my_pages/data_entry.php  --MODIFIED
+application/views/my_pages/user_menu.php  --MODIFIED
+application/views/studio/template_act.php  --MODIFIED
+assets/front/css/theme-style.css  --MODIFIED
+application/models/Customer_employees_model.php  --ADDED
+application/models/Temp_customer_employees_model.php   --ADDED
+application/views/my_pages/data_entry_manual.php   --ADDED
+
+application/models/Student_addresses_model.php --DELETED
+application/models/Student_contacts_model.php  --DELETED
+application/models/Student_images_model.php  --DELETED
+application/models/Student_photos_model.php  --DELETED
+application/models/Student_standard_details_model.php  --DELETED
+
+CREATED TABLE temp_customer_employees
+CREATED TABLE customer_employees
+
+-------------------------------End 02 May 2020------------------------------------------
+-------------------------------Start 09 May 2020------------------------------------------
+git commit application/views/my_pages/download_sample_sheet.php application/views/my_pages/upload_photos.php application/views/my_pages/upload_sheet.php application/views/my_pages/user_action_menu.php assets/front/images/sample-sheet-screen-2.png assets/front/images/sample-sheet-screen-3.png assets/front/images/sample-sheet-screen.png application/config/routes.php application/controllers/My_Pages.php application/core/Vect_Controller.php application/views/my_pages/data_entry.php application/views/my_pages/data_entry_manual.php application/views/my_pages/user_menu.php application/views/my_pages/user_pages_footer.php  application/views/layout/front/main_menu.php  assets/front/css/theme-style.css -m"Edited corporate users account sections"
+
+-------------------------------End 09 May 2020------------------------------------------
+-------------------------------Start 11 May 2020------------------------------------------
+
+ALTER TABLE `users` CHANGE `active_status` `active_status` ENUM('0','1','2','3','4','5') CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '1' COMMENT '1= Active 0 = In-active 2= Applied 3= Selected 4=Rejected 5=On hold';
+
+ALTER TABLE `customer_employees` CHANGE `status` `status` ENUM('draft','reviewed','pending','inprocess','verified_by_customer','verified_by_manager','verified_by_admin','completed','delivered','closed') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'draft';
+
+-------------------------------End 11 May 2020------------------------------------------
+-------------------------------Start 13 May 2020 Done------------------------------------------
+application/views/my_pages/buy_lace.php 
+application/views/my_pages/corporate 
+application/views/my_pages/mydata_completed.php 
+application/views/my_pages/user_cards_menu.php 
+application/views/my_pages/user_data_menu.php 
+application/views/my_pages/user_templates_menu.php 
+application/views/my_pages/created_templates.php
+application/views/my_pages/data_entry.php
+application/views/my_pages/data_entry_manual.php
+application/views/my_pages/download_sample_sheet.php
+application/views/my_pages/draftidcards.php
+application/views/my_pages/idcards.php
+application/views/my_pages/myaccount.php
+application/views/my_pages/mycorporate.php
+application/views/my_pages/upload_photos.php
+application/views/my_pages/upload_sheet.php
+application/views/my_pages/user_action_menu.php
+application/views/my_pages/user_menu.php
+application/views/my_pages/user_pages_header.php
+application/views/layout/front/main_menu.php
+
+
+application/controllers/Ajax.php
+application/controllers/My_Pages.php
+application/core/Vect_Controller.php
+application/models/Customer_employees_model.php
+
+assets/front/css/bootstrapValidator.css 
+assets/front/css/theme-shop.css
+assets/front/css/theme-style.css
+
+assets/front/js/bootstrapValidator.js
+
+-- phpMyAdmin SQL Dump
+-- version 4.9.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 12, 2020 at 09:20 PM
+-- Server version: 10.4.10-MariaDB
+-- PHP Version: 7.1.33
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `muktjivan`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `customer_employees`
+--
+
+CREATE TABLE `customer_employees` (
+  `id` int(11) NOT NULL,
+  `customers_id` int(11) DEFAULT NULL,
+  `customer_templates_id` varchar(20) NOT NULL,
+  `corporate_name` varchar(255) DEFAULT NULL,
+  `employee_code` varchar(25) DEFAULT NULL,
+  `employee_name` varchar(255) DEFAULT NULL,
+  `designation` varchar(100) DEFAULT NULL,
+  `department` varchar(250) DEFAULT NULL,
+  `location` varchar(250) DEFAULT NULL,
+  `valid_from` date DEFAULT NULL,
+  `joining_date` date DEFAULT NULL,
+  `emergency_mobile_no` varchar(100) DEFAULT NULL,
+  `optional_mobile_no` varchar(100) DEFAULT NULL,
+  `employee_adress` varchar(250) DEFAULT NULL,
+  `email_id` varchar(100) DEFAULT NULL,
+  `blood_group` varchar(15) DEFAULT NULL,
+  `dob` date DEFAULT NULL,
+  `photo_1` varchar(255) DEFAULT NULL,
+  `photo_2` varchar(255) DEFAULT NULL,
+  `photo_3` varchar(255) DEFAULT NULL,
+  `scanning_method` varchar(255) DEFAULT NULL,
+  `created_at` date DEFAULT NULL,
+  `created_by` int(11) DEFAULT NULL,
+  `updated_on` date DEFAULT NULL,
+  `updated_by` int(11) DEFAULT NULL,
+  `is_archived` int(11) DEFAULT NULL,
+  `template_id` int(5) NOT NULL,
+  `status` enum('draft','reviewed','pending','inprocess','verified_by_customer','verified_by_manager','verified_by_admin','completed','delivered','closed') NOT NULL DEFAULT 'draft'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `customer_employees`
+--
+ALTER TABLE `customer_employees`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `customer_employees`
+--
+ALTER TABLE `customer_employees`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+-------------------------------End 13 May 2020------------------------------------------
+-------------------------------Start 14 May 2020------------------------------------------
+ALTER TABLE `students` CHANGE `created_on` `created_at` DATE NULL DEFAULT NULL;
+ALTER TABLE `students` ADD `status` ENUM('draft','reviewed','pending','inprocess','verified_by_customer','verified_by_manager','verified_by_admin','completed','delivered','closed') NOT NULL DEFAULT 'draft' AFTER `updated_by`;
+ALTER TABLE `students` DROP `school_name`;
+ALTER TABLE `customer_employees` DROP `corporate_name`;
+ALTER TABLE `templates` CHANGE `status` `status` INT(1) NOT NULL DEFAULT '0';
+ALTER TABLE `customer_employees` ADD `icard_json` TEXT NULL DEFAULT NULL AFTER `scanning_method`;
+ALTER TABLE `customer_employees` ADD `icard_json_back` TEXT NULL DEFAULT NULL AFTER `icard_json`;
+ALTER TABLE `customer_employees` CHANGE `department` `department_name` VARCHAR(250) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `customer_employees` CHANGE `valid_from` `valid_from` VARCHAR(100) NULL DEFAULT NULL;
+ALTER TABLE `customer_employees` CHANGE `joining_date` `joining_date` VARCHAR(100) NULL DEFAULT NULL;
+
+application\config done
+application\controllers\Ajax.php -Done
+application\controllers\My_Pages.php -Done
+application\controllers\Templates.php -Done
+application\controllers\User_Login.php -Done
+application\helpers\utility_helper.php -Done
+application\models\Customer_employees_model.php - Done
+application\models\Students_model.php -Done
+application\views\create_account.php -Done
+application\views\home\featured_templates.php - Done
+application\views\home\index.php - Done
+application\views\home\product_info.php -Done
+application\views\layout\front\header.php -Done
+application\views\layout\front\main_menu.php - Done
+application\views\my_pages\corporate\mydata.php -Done
+application\views\my_pages\created_templates.php -Done
+application\views\my_pages\data_entry_manual.php -Done
+application\views\my_pages\idcards.php -Done
+application\views\my_pages\upload_sheet.php -Done
+application\views\my_pages\user_data_menu.php -Done
+application\views\my_pages\user_menu.php -Done
+application\views\my_pages\user_templates_menu.php -Done
+application\views\studio\template_act.php -Done
+application\views\templates\add_edit.php - Done
+application\views\user_login.php -Done
+
+application\libraries\Templates.php -Done
+application\views\forgot_password.php - Done
+application\views\my_pages\ordered_templates.php  -Done
+
+assets\front\css\theme-style.css
+
+-------------------------------End 14 May 2020------------------------------------------
+-------------------------------Start 17 May 2020------------------------------------------
+
+ALTER TABLE `customer_employees` CHANGE `status` `status` ENUM('draft','reviewed','ordered','pending','inprocess','verified_by_customer','verified_by_manager','verified_by_admin','completed','delivered','closed') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'draft';
+
+CREATE TABLE `orders` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `customers_id` int(11) NOT NULL,
+ `order_no` varchar(20) NOT NULL,
+ `order_date` datetime DEFAULT NULL,
+ `status` int(1) DEFAULT 1,
+ `created_at` datetime DEFAULT NULL,
+ `created_by` int(11) DEFAULT NULL,
+ `updated_on` datetime DEFAULT NULL,
+ `updated_by` int(11) DEFAULT NULL,
+ `is_archived` int(1) DEFAULT 0,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8
+
+CREATE TABLE `order_templates` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `orders_id` int(11) NOT NULL,
+ `templates_id` int(11) NOT NULL,
+ `customers_templates_id` int(11) DEFAULT NULL,
+ `template_unique_id` varchar(20) DEFAULT NULL,
+ `templates_json` text DEFAULT NULL,
+ `is_archived` int(1) DEFAULT 0,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8
+
+CREATE TABLE `order_items` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `orders_id` int(11) NOT NULL,
+ `customers_id` int(11) NOT NULL,
+ `reference_column` varchar(50) NOT NULL,
+ `reference_value` int(11) NOT NULL,
+ `icard_json` text NOT NULL,
+ `status` int(1) NOT NULL,
+ `is_archived` int(1) DEFAULT 0,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8
+
+application/models/Order_items_model.php -Done
+application/models/Order_templates_model.php  -Done
+application/models/Orders_model.php  -Done
+
+application/controllers/Ajax.php  -Done
+application/controllers/My_Pages.php  -Done
+application/controllers/Orders.php  -Done
+
+application/views/home/featured_templates.php  -Done
+application/views/home/smart_card.php   -Done
+
+application/views/my_pages/corporate/mydata.php  -Done
+application/views/my_pages/idcards.php  -Done
+application/views/my_pages/order_process.php -Done
+application/views/my_pages/user_data_menu.php -Done
+
+application/views/my_pages/idcards_inprocess.php -Done
+application/views/my_pages/idcards_reviewed.php -Done
+application/views/my_pages/idcards_verified.php -Done
+
+application/views/orders/index.php -Done
+application/views/orders/view_record. -Done
+application/views/studio/template_act.php -Done
+
+
+application/core/Vect_Controller.php -Done
+application/core/Vect_Model.php -Done
+
+application/libraries/Templates.php  -Done
+
+assets/css/mycustom.css  -Done
+assets/front/css/theme-style.css  -Done
+
+application/controllers/My_Pages.php  -Done
+application/controllers/Orders.php  -Done
+application/helpers/utility_helper.php  -Done
+application/views/my_pages/ordered_templates.php  -Done
+application/views/orders/index.php  -Done
+application/views/orders/view_record.php  -Done
+-------------------------------End 17 May 2020 Done------------------------------------------
+-------------------------------End 25 May 2020 Done------------------------------------------
+ALTER TABLE `students` ADD `is_archived` INT(1) NOT NULL DEFAULT '0' AFTER `status`;
+ALTER TABLE `students` CHANGE `icard_json` `icard_json` LONGTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `icard_json_back` `icard_json_back` LONGTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+application/controllers/My_Pages.php
+application/controllers/Orders.php
+
+application/libraries/Templates.php
+
+application/models/Order_items_model.php
+application/models/Students_model.php
+
+application/views/my_pages/corporate/mydata.php
+application/views/my_pages/idcards.php
+application/views/my_pages/idcards_inprocess.php
+application/views/my_pages/idcards_reviewed.php
+
+application/views/orders/index.php
+
+application/views/studio/template_act.php
+
+
+-------------------------------End 25 May 2020 Done------------------------------------------
+
+
+

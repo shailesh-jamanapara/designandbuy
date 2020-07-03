@@ -1,0 +1,85 @@
+// -------------------------------------------
+// Theme utilities & helper class
+// -------------------------------------------
+
+// Border helpers
+// -------------------------------------------
+.border-white {
+  border: 1px solid transparent;
+  border-color: white !important;   
+}
+
+
+// Border colours
+// -------------------------------------------
+$as-colours: $as-theme-colours;
+@if $as-theme-colours-extended-options == true {
+  // Include social brands
+  $as-colours: $as-theme-colours-extended;
+}
+
+@each $name, $value in $as-colours {
+  .border-#{$name} {
+    &.border {
+      border: 1px solid transparent;
+    }
+    border-color: $value !important;
+  }
+}
+.border-transparent {
+  border-color: transparent !important;
+}
+
+@each $value in (1, 2, 3, 4, 5, 10) {
+  .border-#{$value} { border-width: #{$value}px !important; }
+  .border-w-#{$value} { border-width: #{$value}px !important; } // legacy
+  .border-top-#{$value} { border-top-width: #{$value}px !important; }
+  .border-right-#{$value} { border-right-width: #{$value}px !important; }
+  .border-bottom-#{$value} { border-bottom-width: #{$value}px !important; }
+  .border-left-#{$value} { border-left-width: #{$value}px !important; }
+  
+  // border-AXIS-WIDTH-COLOUR
+  @each $name, $colour in $as-colours {
+    .border-#{$value}-#{$name} {
+      border: #{$value}px solid $colour !important;
+    }
+    .border-top-#{$value}-#{$name} {
+      border-top: #{$value}px solid $colour !important;
+    }
+    .border-bottom-#{$value}-#{$name} {
+      border-bottom: #{$value}px solid $colour !important;
+    }
+    .border-right-#{$value}-#{$name} {
+      border-right: #{$value}px solid $colour !important;
+    }
+    .border-left-#{$value}-#{$name} {
+      border-left: #{$value}px solid $colour !important;
+    }    
+  }
+}
+
+// Responsive
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $next: breakpoint-next($breakpoint, $grid-breakpoints);
+  $infix: breakpoint-infix($next, $grid-breakpoints);
+
+  @include media-breakpoint-up($next) {
+    .border#{$infix}         { border: $border-width solid $border-color !important; }
+    .border-top#{$infix}     { border-top: $border-width solid $border-color !important; }
+    .border-right#{$infix}   { border-right: $border-width solid $border-color !important; }
+    .border-bottom#{$infix}  { border-bottom: $border-width solid $border-color !important; }
+    .border-left#{$infix}    { border-left: $border-width solid $border-color !important; }
+    
+    .border-0#{$infix}        { border: 0 !important; }
+    .border-top-0#{$infix}    { border-top: 0 !important; }
+    .border-right-0#{$infix}  { border-right: 0 !important; }
+    .border-bottom-0#{$infix} { border-bottom: 0 !important; }
+    .border-left-0#{$infix}   { border-left: 0 !important; }
+  }
+}
+
+@each $value in (5, 10, 15, 20, 25, 30, 35, 40, 45, 50) {
+  .rounded-#{$value} {
+    border-radius: #{$value}px !important;
+  }
+}
